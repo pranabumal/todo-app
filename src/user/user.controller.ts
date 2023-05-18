@@ -18,7 +18,7 @@ export class UserController {
   }
 
 
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   @Roles('admin')
   @Get()
   async getUseList(): Promise<User[]> {
